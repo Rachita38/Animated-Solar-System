@@ -1,0 +1,23 @@
+div
+{
+ position:absolute;
+      
+}
+.hidden
+{
+    display:none;
+}
+body
+{
+    background-color:black;
+}
+audio
+{
+    display:none;
+}
+
+.planets
+{
+    font-size:25px;
+    color:white;
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<title> The Solar System </title>
+<link rel="stylesheet" href="planets.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+<p id="text" class="planets">Click on the planets</p>
+
+<audio controls autoplay="true" loop>
+<source src="space.wav" type="audio/wav">
+</audio>
+
+<div id="sun">
+<img class="sun" src="sun.jpg" height="300" width="270" class=".hidden">
+</div>
+
+<div id="mercury">
+    <img class="mercury" src="mercury.jpg" height="100" width="100" class=".hidden">
+</div>
+
+<div id="venus">    
+    <img class="venus" src="venus.jpg" height="100" width="180" class=".hidden">
+</div>
+
+<div id="earth">
+    <img class="earth" src="Earth.jpeg" height="100" width="100" class=".hidden">
+</div>
+
+<div id="mars">
+    <img class="mars" src="Mars.jpg" height="100" width="100" class=".hidden">
+</div>
+
+<div id="jupiter">
+    <img class="jupiter" src="jupiter.png" height="100" width="100"  class=".hidden">
+</div>
+    
+<div id="saturn">
+    <img class="saturn" src="saturn.jpg" height="100" width="200" class=".hidden">
+</div>
+
+<div id="uranus">
+    <img class="uranus" src="uranus.jpg" height="100" width="100">
+</div>
+
+<div id="neptune">
+    <img class="neptune" src="neptune.jpg" height="150" width="200">
+</div>
+
+<script>
+$(document).ready(function()
+{
+     
+     $("#sun").animate({top:'50%',right:'50%'},1000);
+     $("#mercury").animate({top:'35%',left:'35%'},2000);
+     $("#venus").animate({top:'60%',right:'35%'},3000);
+     $("#earth").animate({top:'20%',left:'45%'},4000);
+     $("#mars").animate({bottom:'70%',left:'20%'},5000);
+     $("#jupiter").animate({top:'20%',right:'30%'},6000);
+     $("#saturn").animate({top:'20%',right:'15%'},7000);
+     $("#uranus").animate({bottom:'10%',right:'10%'},8000);
+     $("#neptune").animate({bottom:'20%',left:'2%'},8000);
+     
+});
+
+$(".sun").click(function()
+{
+    
+$("p").text("The sun lies at the heart of the solar system, where it is by far the largest object.It holds 99.8 percent of the solar system's mass and is roughly 109 times the diameter of the Earth-about one million Earths could fit inside the sun.");   
+
+});
+          
+
+$(".mercury").click(function()
+{
+    
+$("p").text("Mercury is the smallest and innermost planet in the Solar System.Its orbital period around the Sun of 88 days is the shortest of all the planets in the Solar System.It is named after the Roman deity Mercury, the messenger to the gods.");   
+
+});
+
+$(".venus").click(function()
+{
+    
+$("p").text("Venus is the second planet from the Sun and is the second brightest object in the night sky after the Moon.Venus is the second largest terrestrial planet and is sometimes referred to as the Earth's sister planet due the their similar size and mass.");   
+
+});
+
+$(".earth").click(function()
+{
+    
+$("p") .text("Earth, our home, is the third planet from the sun. It is the only planet known to have an atmosphere containing free oxygen, oceans of liquid water on its surface, and, of course, life. ... About a fifth of Earth's atmosphereis made up of oxygen, produced by plants.");   
+
+});
+
+$(".mars").click(function()
+{
+    
+$("p").text("Mars is the fourth planet from the Sun and is the second smallest planet in the solar system. Named after the Roman god of war, Mars is also often described as the Red Planet due to its reddish appearance.");   
+
+});
+
+$(".jupiter").click(function()
+{
+    
+$("p").text("Jupiter is the fifth planet from the Sun and the largest in the Solar System. It is a giant planet with a mass one-thousandth that of the Sun, but two-and-a-half times that of all the other planets in the Solar System combined");   
+
+});
+
+$(".saturn").click(function()
+{
+    
+$("p").text("Saturn is the sixth planet from the sun and the second largest planet in the solar system. Saturn was the Roman name for Cronus, the lord of the Titans in Greek mythology. Saturn is the root of the English word Saturday.");   
+
+});
+
+$(".uranus").click(function()
+{
+    
+$("p").text("Uranus is the seventh planet from the Sun. It has the third-largest planetary radius and fourth-largest planetary mass in the Solar System.");   
+
+});
+
+$(".neptune").click(function()
+{
+    
+$("p").text("Neptune is the smallest of the ice giants. Despite being smaller than Uranus, Neptune has a greater mass. Below its heavy atmosphere, Uranus is made of layers of hydrogen, helium, and methane gases. They enclose a layer of water, ammonia and methane ice.");   
+
+});
+</script>
+
+</body>
+</html>
